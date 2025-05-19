@@ -50,7 +50,16 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
     //glide
-    // implementation 'com.github.bumptech.glide:glide:4.16.0'
-    implementation("com.github.bumptech.glide:glide:4.16.0")
+    implementation (libs.github.glide)
+
+    //retrofit
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+
+    //GSON
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    
+    //coroutines
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2")
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2")
 
 }

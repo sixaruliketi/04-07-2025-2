@@ -5,6 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.os.persistableBundleOf
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.myapplication.R
 import com.example.myapplication.databinding.FirstItemBinding
 import com.example.myapplication.models.Post
@@ -28,6 +29,7 @@ class RecyclerViewAdapter(private val itemList: List<Post>) : RecyclerView.Adapt
             textView1.text = item.author
             textView2.text = item.details
 
+            Glide.with(holder.binding.root).load(item.image).into(firstImageView)
         }
     } // ავსებს
 
